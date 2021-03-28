@@ -16,7 +16,7 @@ position: absolute;
 top: 30%;
 left: 50%;
 transform: translate(-50%, -50%);
-color: ghostwhite;
+color: #EBE8E1;
 font-size: 1.5rem;
 `
 
@@ -28,7 +28,7 @@ z-index:15;
 top: 40%;
 left: 50%;
 transform: translate(-50%, -50%);
-color: ghostwhite;
+color: #EBE8E1;
 `
 const Button = styled.button`
 font-family:'Lato';
@@ -38,7 +38,7 @@ left: 50%;
 transform: translate(-50%, -50%);
 background-color: #FF4655;
 border: none;
-color: white;
+color: #EBE8E1;
 font-size: 1.5rem;
 width: 20rem;
 height: 5rem;
