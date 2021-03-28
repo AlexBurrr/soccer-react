@@ -1,22 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import Euro from '../../Images_or_Vids/Images/euro.png'
 
 
 const Nav = styled.nav`
 width:100%;
 height: 7rem;
-background-color: red;
+background-color: black;
 display: flex;
 justify-content: space-between;
 align-items: center;
 text-transform: uppercase;
 font-weight: 700;
-
+color: black;
 
 
 & a:link, a:visited{
-    color: white;
+    color: #FF4655;
     text-decoration: none;
 }
 
@@ -25,27 +26,33 @@ font-weight: 700;
 const Icon = styled.div`
 margin-left: 6rem;
 
-&:hover{
-    opacity: .3;
-}
 
+`
+const Logo = styled.img`
+height: 5rem;
+width: 5rem;
+align-items: center;
 
 
 `
+
+
 const ItemUl = styled.ul`
     
     display: inherit;
     list-style: none;
+    
 
     
 `
 const ItemLi = styled.li`
     margin: 1rem;
     padding: 1.5rem;
+    color: ghostwhite;
 
 
     &:hover{
-        opacity: .3;
+       color:#FF4655
     }
 `
 
@@ -56,7 +63,7 @@ const NavBar = () => {
         <Nav>
             <Icon>
                 <Link to='/'>
-                    Euor
+                    <Logo src={Euro} alt='/' />
                 </Link>
             </Icon>
             <ItemUl>

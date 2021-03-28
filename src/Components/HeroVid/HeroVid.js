@@ -7,6 +7,7 @@ const HeroContainer = styled.div`
 width: 100%;
 height: 60rem;
 z-index: -1;
+clip-path: polygon(0 0, 100% 0, 100% 100%, 3% 100%, 0 92%);
 
 `
 const SubTitle = styled.span`
@@ -35,7 +36,7 @@ position: absolute;
 top: 55%;
 left: 50%;
 transform: translate(-50%, -50%);
-background-color: red;
+background-color: #FF4655;
 border: none;
 color: white;
 font-size: 1.5rem;
@@ -66,7 +67,7 @@ const HeroVid = () => {
 
 
             </VideoCont>
-            <SubTitle>who will be crowned kings of Europe</SubTitle>
+            <SubTitle>Who will be crowned kings of Europe</SubTitle>
             <Title>Euro 2021</Title>
             <Button>See Teams</Button>
         </HeroContainer>
