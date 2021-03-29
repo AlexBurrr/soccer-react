@@ -14,6 +14,9 @@ align-items: center;
 text-transform: uppercase;
 font-weight: 700;
 color: black;
+position: fixed;
+z-index: 15;
+
 
 
 & a:link, a:visited{

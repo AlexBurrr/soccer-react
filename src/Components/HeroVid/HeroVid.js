@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import Video from '../../Images_or_Vids/Vids/HeroEuroPromo.mp4'
-
+import { Link } from 'react-router-dom'
 
 const HeroContainer = styled.div`
 width: 100%;
-height: 60rem;
+height: 66rem;
 z-index: -1;
 clip-path: polygon(0 0, 100% 0, 100% 100%, 3% 100%, 0 92%);
 
@@ -69,7 +69,9 @@ const HeroVid = () => {
             </VideoCont>
             <SubTitle>Who will be crowned kings of Europe</SubTitle>
             <Title>Euro 2021</Title>
-            <Button>See Teams</Button>
+            <Link to='groupsandteams'>
+                <Button>See Teams</Button>
+            </Link>
         </HeroContainer>
     )
 }
