@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 const HomeContainer = styled.div`
  background-color: #EBE8E1;
  width: 100%;
- height: 600rem;
+ height: 400rem;
  `
 const HomePageNewsContainer = styled.div`
 
@@ -77,8 +77,27 @@ transition: 2s ease-in-out;
 &:hover{
     transform: scaleX(5rem);
 }
+`
+const PicImg = styled.img``
+const Date = styled.span`
+color: red;
+position: relative;
+top: 22rem;
+`
+const Team = styled.div`
+color: red;
+position: relative;
+top: 22rem;
+`
+const Headline = styled.div`
+color: red;
+position: relative;
+top: 22rem;
 
 `
+
+
+
 
 const Home = () => {
     return (
@@ -92,9 +111,26 @@ const Home = () => {
                     <NewsButton>go to news page</NewsButton>
                 </Link>
                 <NewsCards>
-                    <Card>1</Card>
-                    <Card>2</Card>
-                    <Card>3</Card>
+                    <Card>
+                        <PicImg />
+                        <Date>3</Date>
+                        <Team>4</Team>
+                        <Headline>5</Headline>
+                    </Card>
+                    <Card>
+                        <PicImg />
+                        <Date>3</Date>
+                        <Team>4</Team>
+                        <Headline>5</Headline>
+                    </Card>
+                    <Card>
+                        <PicImg />
+                        <Date>3</Date>
+                        <Team>4</Team>
+                        <Headline>5</Headline>
+                    </Card>
+
+
                 </NewsCards>
 
             </HomePageNewsContainer>
