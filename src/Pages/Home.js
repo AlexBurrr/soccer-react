@@ -43,6 +43,22 @@ text-transform: uppercase;
 margin: 0;
 padding:0;
 `
+const NewsTitle2 = styled.div`
+z-index: 5;
+position: relative;
+width:110rem;
+top: 25rem;
+left: 22rem;
+color:#0F1A24;
+font-size: 13rem;
+font-family: 'Tungsten';
+text-transform: uppercase;
+margin: 0;
+padding:0;
+border-top: solid #C0BFBB 1px;
+padding-top: 8rem;
+`
+
 const NewsCards = styled.div`
 display: flex;
 position: absolute; 
@@ -177,9 +193,9 @@ const Home = () => {
                         <Team>Belgium</Team>
                         <Headline>Kevin De Bruyne, Belgium Crush Scotland in Euro 2020 Qualifying</Headline>
                     </Card>
-
-
                 </NewsCards>
+                <NewsTitle2>DREAM, WIN, REMEMBER</NewsTitle2>
+
 
             </HomePageNewsContainer>
         </HomeContainer>
