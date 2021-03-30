@@ -32,19 +32,26 @@ color: #EBE8E1;
 `
 const Button = styled.button`
 font-family:'Lato';
+cursor: pointer;
 position: absolute;
 top: 55%;
 left: 50%;
 transform: translate(-50%, -50%);
-background-color: #FF4655;
+background-color: #FF4655;opacity: .8;
 border: none;
 color: #EBE8E1;
 font-size: 1.5rem;
 width: 20rem;
 height: 5rem;
 
+background-position: right bottom;
+transition: background-position .5s ease;
+background-image: linear-gradient(45deg, #0F1A24 50%, #FF4655 50%);
+background-size: 250% 100%;
+
 &:hover{
-    background-color: black;
+   
+    background-position: left top;
 }
 
 

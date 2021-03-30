@@ -3,7 +3,7 @@ import HeroVid from '../Components/HeroVid/HeroVid'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { BsArrowRight } from 'react-icons/bs'
-import Ronald from '../Images_or_Vids/Images/ronald.jpeg'
+import Ronald from '../Images_or_Vids/Images/ronaldo.png'
 import mbappe from '../Images_or_Vids/Images/mbappe.jpeg'
 import DeBruyn from '../Images_or_Vids/Images/deBruyn.jpeg'
 
@@ -29,6 +29,18 @@ font-family: 'Tungsten';
   -webkit-text-fill-color:transparent;
 
 `
+const BackText2 = styled.span`
+position: relative; 
+top:-8rem;
+left:70rem;
+font-family: 'Tungsten';
+ font-size: 30rem;
+ text-transform: uppercase;
+ letter-spacing: 2rem;
+ -webkit-text-stroke:2px #DFDCD5;
+  -webkit-text-fill-color:transparent;
+
+`
 
 const NewsTitle = styled.div`
 z-index: 5;
@@ -46,17 +58,17 @@ padding:0;
 const NewsTitle2 = styled.div`
 z-index: 5;
 position: relative;
-width:110rem;
-top: 25rem;
-left: 22rem;
+width:120rem;
+top:-15rem;
+left: 15rem;
 color:#0F1A24;
-font-size: 13rem;
+font-size: 12rem;
 font-family: 'Tungsten';
 text-transform: uppercase;
 margin: 0;
 padding:0;
 border-top: solid #C0BFBB 1px;
-padding-top: 8rem;
+padding-top: 4rem;
 `
 
 const NewsCards = styled.div`
@@ -105,8 +117,11 @@ transition: .5s ease-in-out;
 
 const PicImg = styled.img`
 object-fit: cover;
+z-index: -5;
 width: 38rem;
 height: 20rem;
+
+
 
 `
 const Dates = styled.span`
@@ -169,11 +184,12 @@ const Home = () => {
         <HomeContainer>
             <HeroVid />
             <HomePageNewsContainer>
-                <BackText>Siuuuuu!</BackText>
+                <BackText>Allez!!</BackText>
                 <NewsTitle>Latest News</NewsTitle>
                 <Link to='news'>
                     <NewsButton>go to news page <RightArrowIcon /></NewsButton>
                 </Link>
+                <BackText2>Siuuu!</BackText2>
                 <NewsCards>
                     <Card>
                         <PicImg src={Ronald} />
