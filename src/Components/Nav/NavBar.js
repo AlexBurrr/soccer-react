@@ -80,6 +80,9 @@ const NavBar = () => {
                 <Link to='players'>
                     <ItemLi>Players</ItemLi>
                 </Link>
+                <Link to='locations'>
+                    <ItemLi>Locations</ItemLi>
+                </Link>
                 <Link to='about'>
                     <ItemLi>About</ItemLi>
                 </Link>

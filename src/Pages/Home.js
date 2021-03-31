@@ -10,7 +10,7 @@ import Groups from '../Images_or_Vids/Images/groups.jpeg'
 import MbappeSlide from '../Images_or_Vids/Images/mbappeCover.png'
 import Lewy from '../Images_or_Vids/Images/lewy.png'
 import Kimmich from '../Images_or_Vids/Images/kimmich.png'
-
+import Stadium from '../Images_or_Vids/Images/stadium.png'
 
 
 const HomeContainer = styled.div`
@@ -299,8 +299,79 @@ background-size: 250% 100%;
    
     background-position: left top;
 }
+`
+const CitiesContainer = styled.div`
+position: relative;
+top: -30rem;
+`
+const CitiesWrapper = styled.div`
+`
+const CityImg = styled.img`
+position: relative;
+left: 70rem;
+top: 0rem;
+width: 70rem;
+height: 50rem;
 
 `
+const CityDetails = styled.div`
+position: relative;
+top: -20rem;
+left: -15rem;
+`
+
+const CityTitle = styled.div`
+position: relative;
+ font-family: 'Tungsten';
+ text-transform: uppercase;
+ font-size: 10rem;
+ width: 40rem;
+ left: 35rem;
+ top: -20rem;`
+
+
+const CitySubTitle = styled.div`
+position: relative;
+ text-transform: uppercase;
+ font-size: 2rem;
+ width: 40rem;
+ left: 35rem;
+ top: -18rem;`
+
+
+const CityText = styled.div`
+position: relative;
+ font-size: 1.5rem;
+ line-height: 2rem;
+ width: 40rem;
+ left: 35rem;
+ top: -15rem;`
+
+const CityButton = styled.button`
+font-family:'Lato';
+cursor: pointer;
+position: absolute;
+top: 60%;
+left: 32%;
+transform: translate(-50%, -50%);
+border: none;
+color: #FFFFFF;
+font-size: 1.5rem;
+width: 20rem;
+height: 5rem;
+
+background-position: right bottom;
+transition: background-position .5s ease;
+background-image: linear-gradient(45deg, #0F1A24 50%, #F84755 50%);
+background-size: 250% 100%;
+
+&:hover{
+   
+    background-position: left top;
+}
+`
+
+
 
 
 
@@ -380,6 +451,21 @@ const Home = () => {
                         </PlayerDetailsContainer>
                     </KeyPlayerWrapper>
                 </KeyPlayersContainer>
+
+                <CitiesContainer>
+                    <CitiesWrapper>
+                        <CityImg src={Stadium} />
+                        <CityDetails>
+                            <CityTitle>Cities</CityTitle>
+                            <CitySubTitle>Competition across europe</CitySubTitle>
+                            <CityText>deets</CityText>
+                            <Link to='/locations'>
+                                <CityButton>See Different Cities</CityButton>
+                            </Link>
+
+                        </CityDetails>
+                    </CitiesWrapper>
+                </CitiesContainer>
 
 
 
