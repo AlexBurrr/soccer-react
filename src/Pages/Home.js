@@ -7,6 +7,9 @@ import Ronald from '../Images_or_Vids/Images/ronaldo.png'
 import mbappe from '../Images_or_Vids/Images/mbappe.jpeg'
 import DeBruyn from '../Images_or_Vids/Images/deBruyn.jpeg'
 import Groups from '../Images_or_Vids/Images/groups.jpeg'
+import MbappeSlide from '../Images_or_Vids/Images/mbappeCover.png'
+import Lewy from '../Images_or_Vids/Images/lewy.png'
+import Kimmich from '../Images_or_Vids/Images/kimmich.png'
 
 
 
@@ -200,11 +203,104 @@ const GroupTitle = styled.div`
     text-transform: uppercase;
     font-weight: 700;
     color: #383E39;
-    
-    
-
 `
 
+const KeyPlayersContainer = styled.div`
+position: relative;
+width: 100%;
+top: -30rem;
+height: 80rem;
+clip-path: polygon(8% 5%, 93% 5%, 93% 4%, 100% 4%, 100% 100%, 30% 100%, 0 100%, 0 0);
+background-color: #FF4655;
+color: #EBE8E1;
+`
+const KeyPlayerWrapper = styled.div`
+display: flex;
+position: absolute;
+left: 50%;
+top: 57%;
+transform: translate(-50%,-50%);
+`
+
+const PlayerImages = styled.div`
+ position: relative;
+ display: flex;
+ left: -10rem;
+ top: 4rem;
+`
+const Player1 = styled.img`
+position: absolute;
+top: -25rem;
+left:-17rem;
+height: 60rem;
+`
+const Player2 = styled.img`
+position: absolute;
+top: -25rem;
+left: -40rem;
+height: 60rem;
+`
+const Player3 = styled.img`
+position: absolute;
+top: -25rem;
+left: 7rem;
+height: 60rem;
+`
+
+
+const PlayerDetailsContainer = styled.div`
+ position: relative;
+`
+const PlayerTitle = styled.h1`
+ position: relative;
+ font-family: 'Tungsten';
+ text-transform: uppercase;
+ font-size: 10rem;
+ width: 40rem;
+ left: 35rem;
+ top: -20rem;
+`
+const PlayerSubTitle = styled.h3`
+ position: relative;
+ text-transform: uppercase;
+ font-size: 2rem;
+ width: 40rem;
+ left: 35rem;
+ top: -18rem;
+`
+const PlayersDesc = styled.section`
+ position: relative;
+ font-size: 1.5rem;
+ line-height: 2rem;
+ width: 40rem;
+ left: 35rem;
+ top: -15rem;
+`
+
+const Button = styled.button`
+font-family:'Lato';
+cursor: pointer;
+position: absolute;
+top: 70%;
+left: 112%;
+transform: translate(-50%, -50%);
+border: none;
+color: #FF4655;
+font-size: 1.5rem;
+width: 20rem;
+height: 5rem;
+
+background-position: right bottom;
+transition: background-position .5s ease;
+background-image: linear-gradient(45deg, #0F1A24 50%, #EAE8E1 50%);
+background-size: 250% 100%;
+
+&:hover{
+   
+    background-position: left top;
+}
+
+`
 
 
 
@@ -265,6 +361,25 @@ const Home = () => {
                     </GroupText>
                     <GroupImage src={Groups} />
                 </GroupContainer>
+
+                <KeyPlayersContainer>
+                    <KeyPlayerWrapper>
+                        <PlayerImages>
+                            <Player1 src={MbappeSlide} alt='/' />
+                            <Player2 src={Lewy} alt='/' />
+                            <Player3 src={Kimmich} alt='/' />
+                        </PlayerImages>
+                        <PlayerDetailsContainer>
+                            <PlayerTitle>Key Players</PlayerTitle>
+                            <PlayerSubTitle>Will they carry their team?</PlayerSubTitle>
+                            <PlayersDesc>Anyone can come through in a pivotal situation, but some players consistently perform better than others when the stakes are high. Succeed and you’re the hero and if you fail you’re the villain. These players are often the engine and heart of their club teams, can they clutch it at the national stage?</PlayersDesc>
+                            <Link to='/players'>
+                                <Button>View Key Players</Button>
+                            </Link>
+
+                        </PlayerDetailsContainer>
+                    </KeyPlayerWrapper>
+                </KeyPlayersContainer>
 
 
 
