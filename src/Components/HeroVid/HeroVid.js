@@ -37,7 +37,7 @@ position: absolute;
 top: 55%;
 left: 50%;
 transform: translate(-50%, -50%);
-background-color: #FF4655;opacity: .8;
+background-color: #FF4655;
 border: none;
 color: #EBE8E1;
 font-size: 1.5rem;

@@ -6,6 +6,7 @@ import { BsArrowRight } from 'react-icons/bs'
 import Ronald from '../Images_or_Vids/Images/ronaldo.png'
 import mbappe from '../Images_or_Vids/Images/mbappe.jpeg'
 import DeBruyn from '../Images_or_Vids/Images/deBruyn.jpeg'
+import Groups from '../Images_or_Vids/Images/groups.jpeg'
 
 
 
@@ -164,6 +165,48 @@ font-size: 3rem;
 
 `
 
+const GroupContainer = styled.div`
+
+`
+const GroupImage = styled.img`
+position: relative;
+top: -38.5rem;
+height: 40rem;
+left: 52%;
+width: 66rem;
+
+`
+const GroupText = styled.div`
+    position: relative;
+`
+const GroupDetails = styled.div`
+    position: relative;
+    left: 22%;
+    top: -4rem;
+    width: 27rem;
+    height: 30rem;
+    font-size:1.3rem;
+    line-height: 2.5rem;
+    color: #768078;
+    font-weight: 700;
+
+`
+const GroupTitle = styled.div`
+    position: relative;
+    width: 20rem;
+    left: 22%;
+    top: -6.5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #383E39;
+    
+    
+
+`
+
+
+
 
 
 let Today = new Date();
@@ -210,7 +253,19 @@ const Home = () => {
                         <Headline>Kevin De Bruyne, Belgium Crush Scotland in Euro 2020 Qualifying</Headline>
                     </Card>
                 </NewsCards>
-                <NewsTitle2>DREAM, WIN, REMEMBER</NewsTitle2>
+                <GroupContainer>
+                    <NewsTitle2>DREAM, WIN, REMEMBER</NewsTitle2>
+                    <GroupText>
+                        <GroupTitle>
+                            Head to head
+                        </GroupTitle>
+                        <GroupDetails>
+                            There are a couple of eye-catching groups and a few sensational-looking opening fixtures; if France taking on Germany and England facing Croatia again after losing to them in the 2018 FIFA World Cup semi-finals first up doesn't whet your appetite, nothing will.
+                        </GroupDetails>
+                    </GroupText>
+                    <GroupImage src={Groups} />
+                </GroupContainer>
+
 
 
             </HomePageNewsContainer>
