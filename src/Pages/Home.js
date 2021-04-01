@@ -16,7 +16,7 @@ import Stadium from '../Images_or_Vids/Images/stadium.png'
 const HomeContainer = styled.div`
  background-color: #EBE8E1;
  width: 100%;
- height: 400rem;
+ min-height: 60%;
  `
 const HomePageNewsContainer = styled.div`
 
@@ -303,6 +303,7 @@ background-size: 250% 100%;
 const CitiesContainer = styled.div`
 position: relative;
 top: -30rem;
+height:50rem;
 `
 const CitiesWrapper = styled.div`
 `
@@ -327,7 +328,9 @@ position: relative;
  font-size: 10rem;
  width: 40rem;
  left: 35rem;
- top: -20rem;`
+ top: -12rem;
+ border-top: solid #C0BFBA 1px;
+ `
 
 
 const CitySubTitle = styled.div`
@@ -336,7 +339,7 @@ position: relative;
  font-size: 2rem;
  width: 40rem;
  left: 35rem;
- top: -18rem;`
+ top: -7rem;`
 
 
 const CityText = styled.div`
@@ -345,13 +348,13 @@ position: relative;
  line-height: 2rem;
  width: 40rem;
  left: 35rem;
- top: -15rem;`
+ top: -5rem;`
 
 const CityButton = styled.button`
 font-family:'Lato';
 cursor: pointer;
 position: absolute;
-top: 60%;
+top: 105%;
 left: 32%;
 transform: translate(-50%, -50%);
 border: none;
@@ -371,8 +374,44 @@ background-size: 250% 100%;
 }
 `
 
+const FooterContainer = styled.div`
+position: relative;
+background-color: black;
+width: 100%;
+height: 30rem;
+color: white;
+`
+const FooterWrapper = styled.div``
+const FooterTop = styled.div`
+position: relative;
+left: 5rem;
+top: 5rem;
+width: 90%;
+margin: 2rem;
+border-bottom: solid 1px white;
 
+`
+const FooterMiddle = styled.div`
+`
+const MiddleLi = styled.div`
+list-style: none;
+display: flex;
+position: relative;
+left: 7rem;
+top: 10rem;
+width: 90%;
+`
+const MiddleItemTopic = styled.span`
+padding-right: 6rem;
+border-right: solid 1px white;
+`
 
+const MiddleItem = styled.li`
+margin-right: 5rem;
+margin-left: 1.5rem;
+
+`
+const FooterBottom = styled.div``
 
 
 
@@ -458,14 +497,40 @@ const Home = () => {
                         <CityDetails>
                             <CityTitle>Cities</CityTitle>
                             <CitySubTitle>Competition across europe</CitySubTitle>
-                            <CityText>deets</CityText>
-                            <Link to='/locations'>
-                                <CityButton>See Different Cities</CityButton>
-                            </Link>
+                            <CityText>In 2021 the European Championship will be held in 12 different venues across 12 different cities in 12 different nations.
 
+Of the 12 venues, all will stage at least three group stage games and a knock-out round tie each. Follow your team across the continent in search for glory!</CityText>
+                            <Link to='/locations'>
+                                <CityButton>See  Cities</CityButton>
+                            </Link>
                         </CityDetails>
                     </CitiesWrapper>
                 </CitiesContainer>
+
+
+
+                <FooterContainer>
+                    <FooterWrapper>
+                        <FooterTop>
+                            Euro 2021
+
+                        </FooterTop>
+                        <FooterMiddle>
+                            <MiddleLi>
+                                <MiddleItemTopic>About</MiddleItemTopic>
+                                <MiddleItem>1</MiddleItem>
+                                <MiddleItem>2</MiddleItem>
+                                <MiddleItem>3</MiddleItem>
+                            </MiddleLi>
+
+                        </FooterMiddle>
+                        <FooterBottom>
+
+                        </FooterBottom>
+
+                    </FooterWrapper>
+
+                </FooterContainer>
 
 
 
