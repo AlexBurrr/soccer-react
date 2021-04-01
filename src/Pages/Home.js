@@ -179,6 +179,31 @@ left: 52%;
 width: 66rem;
 
 `
+const GroupButton = styled.button`
+font-family:'Lato';
+cursor: pointer;
+position: absolute;
+top: 70%;
+left: 29%;
+transform: translate(-50%, -50%);
+border: none;
+color: #FFFFFF;
+font-size: 1.5rem;
+width: 20rem;
+height: 5rem;
+
+background-position: right bottom;
+transition: background-position .5s ease;
+background-image: linear-gradient(45deg, #0F1A24 50%, #FF4655 50%);
+background-size: 250% 100%;
+
+&:hover{
+   
+    background-position: left top;
+}
+`
+
+
 const GroupText = styled.div`
     position: relative;
 `
@@ -468,6 +493,7 @@ const Home = () => {
                         <GroupDetails>
                             There are a couple of eye-catching groups and a few sensational-looking opening fixtures; if France taking on Germany and England facing Croatia again after losing to them in the 2018 FIFA World Cup semi-finals first up doesn't whet your appetite, nothing will.
                         </GroupDetails>
+                        <GroupButton>See Groups</GroupButton>
                     </GroupText>
                     <GroupImage src={Groups} />
                 </GroupContainer>
@@ -518,9 +544,9 @@ Of the 12 venues, all will stage at least three group stage games and a knock-ou
                         <FooterMiddle>
                             <MiddleLi>
                                 <MiddleItemTopic>About</MiddleItemTopic>
-                                <MiddleItem>1</MiddleItem>
-                                <MiddleItem>2</MiddleItem>
-                                <MiddleItem>3</MiddleItem>
+                                <MiddleItem>Teams</MiddleItem>
+                                <MiddleItem>Players</MiddleItem>
+                                <MiddleItem>Cities</MiddleItem>
                             </MiddleLi>
 
                         </FooterMiddle>
