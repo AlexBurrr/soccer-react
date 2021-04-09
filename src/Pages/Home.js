@@ -50,7 +50,7 @@ const NewsTitle = styled.div`
 z-index: 5;
 position: relative;
 width:50rem;
-top: -20rem;
+top: -22.5rem;
 left: 12rem;
 color:#FF4655;
 font-size: 12rem;

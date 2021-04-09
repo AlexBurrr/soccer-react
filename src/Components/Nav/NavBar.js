@@ -17,6 +17,10 @@ color: black;
 position: fixed;
 z-index: 15;
 
+@media(max-width:350px){
+    display: none;
+}
+
 
 
 & a:link, a:visited{
@@ -65,25 +69,25 @@ const NavBar = () => {
     return (
         <Nav>
             <Icon>
-                <Link to='/'>
+                <Link to='#'>
                     <Logo src={Euro} alt='/' />
                 </Link>
             </Icon>
             <ItemUl>
-                <Link to='/groupsandteams'>
+                <Link to='/#groupsandteams'>
                     <ItemLi>Groups and Teams</ItemLi>
 
                 </Link>
-                <Link to='news'>
+                <Link to='#news'>
                     <ItemLi>News</ItemLi>
                 </Link>
-                <Link to='players'>
+                <Link to='#players'>
                     <ItemLi>Players</ItemLi>
                 </Link>
-                <Link to='locations'>
+                <Link to='#locations'>
                     <ItemLi>Locations</ItemLi>
                 </Link>
-                <Link to='about'>
+                <Link to='#about'>
                     <ItemLi>About</ItemLi>
                 </Link>
             </ItemUl>

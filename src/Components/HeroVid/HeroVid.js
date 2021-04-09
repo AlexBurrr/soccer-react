@@ -9,6 +9,8 @@ height: 66rem;
 z-index: -1;
 clip-path: polygon(0 0, 100% 0, 100% 100%, 3% 100%, 0 92%);
 
+
+
 `
 const SubTitle = styled.span`
 font-family:'Lato';
@@ -18,6 +20,12 @@ left: 50%;
 transform: translate(-50%, -50%);
 color: #EBE8E1;
 font-size: 1.5rem;
+
+@media(max-width: 375px){
+   height: 35rem;
+   font-size: 5.5px;
+}
+
 `
 
 const Title = styled.span`
@@ -29,6 +37,12 @@ top: 40%;
 left: 50%;
 transform: translate(-50%, -50%);
 color: #EBE8E1;
+
+@media (max-width: 375px){
+   height: 48rem;
+   font-size: 3rem;
+}
+
 `
 const Button = styled.button`
 font-family:'Lato';
@@ -55,6 +69,14 @@ background-size: 250% 100%;
 }
 
 
+@media(max-width: 375px){
+    position: relative;
+    top: 13rem;
+   height: 1.5rem;
+   width: 5rem;
+   font-size: 5.5px;
+}
+
 
 `
 
@@ -64,6 +86,10 @@ position: absolute;
 width: 100%;
 top: -4rem;
 object-fit: contain;
+
+@media(max-width: 375px){
+   height: 290px;
+}
 `
 
 const HeroVid = () => {
